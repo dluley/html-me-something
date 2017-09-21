@@ -1,46 +1,65 @@
 body {
 	width: 100%;
-	max-width: 1024px;
+	max-width: 1000px;
 	margin: 0 auto;
 	background-color: #008B8B;
 	font-size: 62.5%;
+	text-align: center;
 }
 
 .classy {
-    font-style: bold;
+	font-style: bold;
+	text-align: center;
+    font-size: 1.75em;
 }
 
+.scale-down {
+	width: 50%;
+	height: 50%;
+}
+
+.contain {
+	object-fit: cover;
+}
+
+aside,
 header,
 main,
 footer {
 	background-color: #ddd;
 	font-size: 1.6em;
+
 }
 
 header {
-	padding: 1.875em 0;
-}
-
-header h1 {
-	text-align: center;
+	padding: 3em;
 }
 
 h1, h2, h3 {
-	margin: 1em;
+	text-align: center;
 }
 
 h1 {
-	font-size: 2.5em;
+	font-size: 2em;
+	font-family: Palatino Linotype;
+	border: 5px solid #000000
 }
 
-main h2 {
+h2 {
     text-align: center;
-    font-size: 1.75em;
-	margin: 2em 0 2em 0;
+    font-size: 2.5em;
+	margin: 0;
+}
+
+main {
+	padding: 3em;
 }
 
 section {
-	margin: 0 0 2em 0;
+	margin: auto;
+    border: 1px solid #008B8B;
+	padding: 1.25em;
+	width: 80%;
 }
 
 section:first-child {
@@ -59,15 +78,12 @@ nav ul {
 nav ul li {
 	display: inline-block;
 	margin-right: 1em;
-	font-size: 1em;
+	font-size: 1.20em;
+	font-color: #000000;
 }
 
 p {
-    font-style: bold;
-    width: 80%;
-    margin: auto;
-    border: 1px solid #008B8B;
-	padding: 1.25em;
+    font-style: bold;    
 }
 
 figure {
@@ -95,6 +111,7 @@ img {
     border: 1px solid #000000
 }
 
+
 @media screen and (max-width: 680px) {
 	nav ul li {
 		margin: 1em 0;
@@ -104,4 +121,3 @@ img {
 	body {
 		font-size: 50%;
 	}
-}
